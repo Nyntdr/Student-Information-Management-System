@@ -84,6 +84,25 @@ CREATE TABLE IF NOT EXISTS notice (
 
 The tables are created empty. Register an account through `auth/register.php`, then add student, subject, learning, attendance, and notice records through the admin pages.
 
+### Sample data
+
+This repository includes Nepal-themed demo data in `database/sample_data.sql`. Import it after creating the tables:
+
+```bash
+sudo mysql SIMS < database/sample_data.sql
+```
+
+The sample login accounts are:
+
+| Username | Password | Role |
+| --- | --- | --- |
+| `nepaladmin` | `Kathmandu@123` | Admin |
+| `sita_kc` | `Himalaya@123` | Student |
+| `ram_thapa` | `Pokhara@123` | Student |
+| `anil_gurung` | `Lumbini@123` | Student |
+
+These are local demo credentials only and must not be used in a production deployment.
+
 ## Project structure
 
 - `auth/` contains login and registration pages and their stylesheets.
